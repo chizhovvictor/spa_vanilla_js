@@ -1,4 +1,4 @@
-import Main from './components/Main.js';
+import Hero from './components/Hero.js';
 import Posts from './components/Posts.js';
 import Settings from './components/Settings.js';
 
@@ -9,9 +9,9 @@ const navigateTo = url => {
 
 const router = async () => {
     const routes = [
-        { path: '/', view: Main },
-        { path: '/posts', view: Posts },
-        { path: '/settings', view: Settings },
+        { path: '/', view: Hero },
+        // { path: '/posts', view: Posts },
+        // { path: '/settings', view: Settings },
     ];
 
     const potentialMatches = routes.map(route => {
@@ -27,6 +27,7 @@ const router = async () => {
             route: routes[0],
             isMatch: true
         };
+
     }
     const view = new match.route.view();
     document.getElementById('app').innerHTML = await view.getHtml();
@@ -44,4 +45,5 @@ document.addEventListener('click', e => {
         navigateTo(e.target.href);
     }
 });
+
 

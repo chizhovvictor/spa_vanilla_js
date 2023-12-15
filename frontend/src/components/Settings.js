@@ -1,9 +1,6 @@
-import TemplateView from './templateView.js';
-
-export default class extends TemplateView {
+export default class {
     constructor() {
-        super();
-        this.setTitle('Settings');
+        document.title = 'Settings';
     }
 
     async getHtml() {
