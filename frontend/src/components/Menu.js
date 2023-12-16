@@ -13,17 +13,25 @@ export default class {
     async getHtml() {
         const buttonHtml = await this.button.getHtml();
       return `
-            <div class="row">
-                ${buttonHtml}
+            <div class="row mt-5">
+                <div class="d-flex justify-content-start">
+                    ${buttonHtml}
+                </div>
             </div>
             <div class="row">
-                ${buttonHtml}
+                <div class="d-flex justify-content-start">
+                    ${buttonHtml}
+                </div>
             </div>
             <div class="row">
-                ${buttonHtml}
+                <div class="d-flex justify-content-start">
+                    ${buttonHtml}
+                </div>
             </div>
             <div class="row">
-                ${buttonHtml}
+                <div class="d-flex justify-content-start">
+                    ${buttonHtml}
+                </div>
             </div>
       `;
     }
