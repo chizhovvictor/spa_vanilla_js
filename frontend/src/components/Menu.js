@@ -7,29 +7,29 @@ export default class {
         { path: "/posts", text: "Posts" },
         { path: "/settings", text: "Settings" },
       ];
-      this.button = new Button("Button 1");
+      this.button = new Button("New Game");
     }
   
     async getHtml() {
         const buttonHtml = await this.button.getHtml();
       return `
-            <div class="row mt-5">
-                <div class="d-flex justify-content-start">
+            <div class="row">
+                <div class="d-flex justify-content-end">
                     ${buttonHtml}
                 </div>
             </div>
             <div class="row">
-                <div class="d-flex justify-content-start">
+                <div class="d-flex justify-content-end">
                     ${buttonHtml}
                 </div>
             </div>
             <div class="row">
-                <div class="d-flex justify-content-start">
+                <div class="d-flex justify-content-end">
                     ${buttonHtml}
                 </div>
             </div>
             <div class="row">
-                <div class="d-flex justify-content-start">
+                <div class="d-flex justify-content-end">
                     ${buttonHtml}
                 </div>
             </div>
