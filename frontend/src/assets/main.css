@@ -19,7 +19,7 @@ body {
 
   .hero {
     background-color: #fefae9;
-    background-image: url('/src/static/back2.jpg'); /* Путь к вашей картинке */
+    background-image: url('/src/static/1217.mp4'); /* Путь к вашей картинке */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,4 +88,11 @@ body {
     width: 30vw;
   }
   
+}
+
+.logo_text_menu {
+  font-size: 2rem;
+  color: #041b29;
+  font-weight: bold;
+  letter-spacing: -2px;
 }

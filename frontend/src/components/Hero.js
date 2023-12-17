@@ -24,7 +24,12 @@ export default class {
                     </div>
                     <div class="col-lg-4">
                         <div class="row logo justify-content-end me-5">
-                            <img class="img_logo m-2" src="/src/static/logo.png" alt=""></img>
+                            <span>
+                                <img class="img_logo m-2" src="/src/static/logo2.png" alt=""></img>
+                            </span>
+                            <span>    
+                                <img class="img_logo m-2" src="/src/static/text_logo.png" alt=""></img>
+                            </span>
                         </div>
                         <div class="me-5 mt-5">
                             ${menuHtml}
