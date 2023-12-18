@@ -1,5 +1,5 @@
-export default class {
-    constructor(text) {
+export default class MenuButton {
+    constructor(text, onClick) {
         this.text = text || "Button";
         this.onClick = onClick || (() => {});
     }
