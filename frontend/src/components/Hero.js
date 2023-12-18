@@ -10,9 +10,12 @@ export default class {
         const menuHtml = await this.menu.getHtml();
 
         return `
-        <div class="row-1 nav_bar">
+        <div class="row-1 nav_bar d-flex justify-content-between">
             <div class="p-2">
                 <span class="logo_text ps-5">PING PONG</span>
+            </div>
+            <div class="auth_button p-2">
+                <button class="btn btn-primary me-5" type="submit">Sign In</button>
             </div>      
         </div>
         <div class="hero">
@@ -24,12 +27,7 @@ export default class {
                     </div>
                     <div class="col-lg-4">
                         <div class="row logo justify-content-end me-5">
-                            <span>
-                                <img class="img_logo m-2" src="/src/static/logo2.png" alt=""></img>
-                            </span>
-                            <span>    
-                                <img class="img_logo m-2" src="/src/static/text_logo.png" alt=""></img>
-                            </span>
+                            <img class="img_logo m-2" src="/src/static/text_logo.png" alt=""></img>
                         </div>
                         <div class="me-5 mt-5">
                             ${menuHtml}

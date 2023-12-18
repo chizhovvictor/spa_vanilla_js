@@ -15,25 +15,44 @@ body {
     font-family: 'Source Code Pro', monospace;
     font-size: 100%;
     height: 100%;
-  }
+}
 
-  .hero {
+.hero {
     background-color: #fefae9;
     background-image: url('/src/static/1217.mp4'); /* Путь к вашей картинке */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 93vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+}
 
-  .w-30 {
+.w-30 {
     width: 30%;
-  }
+}
+
+.btn-primary {
+  background: #FE638B;
+  border: none;
+  color: #041b29;
+  font-weight: bold;
+  letter-spacing: -1px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #069E92;
+  color: #041b29;
+}
+
+.btn-primary:active {
+  background: #041b29 !important; 
+  color: #ffffff !important;
+}
   
-  button {
+button {
     font-family: 'Font', sans-serif;
     font-size: 100%;
     border: none;
@@ -41,20 +60,35 @@ body {
     cursor: pointer;
     transition: 0.3s;
     background: none;
-  }
+}
 
-  .button_menu {
+.button_menu {
     border: none;
     color: #ffffff;
     
-  }
+}
 
-  .button_text {
+.button_menu:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+.button_text {
     font-size: 2rem;
     color: #041b29;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     font-weight: bold;
-    
+    transition: color 0.2s;  
+}
+
+.button_text:hover {
+  color: #069E92;
+  text-shadow: 1px 1px 1px #041b29;
+}
+
+.button_text:active {
+  transition: color 0s;
+  color: #FE638B; /* Новый цвет текста при клике */
 }
 
 .logo {
@@ -63,29 +97,31 @@ body {
 
 .logo_text {
   font-size: 2rem;
-  color: #ffffff;
+  color: #069E92;
   font-weight: bold;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
 .nav_bar {
   background: #041b29;
-  height: 10vh;
+  height: 7vh;
+  display: flex;
+  align-items: center;
 }
 
 .img_logo {
-  width: 10vw;
+  width: 40vw;
 }
 
 @media screen and (max-width: 768px) {
   .img_logo {
-    width: 20vw;
+    width: 50vw;
   }
 }
 
 @media screen and (max-width: 576px) {
   .img_logo {
-    width: 30vw;
+    width: 60vw;
   }
   
 }
@@ -94,5 +130,5 @@ body {
   font-size: 2rem;
   color: #041b29;
   font-weight: bold;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
