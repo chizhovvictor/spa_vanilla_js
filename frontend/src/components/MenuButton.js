@@ -4,12 +4,11 @@ export default class MenuButton {
         this.onClick = onClick || (() => {});
     }
 
-    async getHtml() {
+    getHtml() {
         return `
-        <button class="button_menu" onclick="${this.onClick.toString()}">
+        <button class="button_menu" onclick="${this.onClick}">
             <span class="button_text">${this.text}</span>
         </button>
         `;
     }
-
 }

@@ -1,6 +1,7 @@
 import Hero from './components/Hero.js';
-import Posts from './components/Posts.js';
-import Settings from './components/Settings.js';
+
+// import Posts from './components/Posts.js';
+// import Settings from './components/Settings.js';
 
 const navigateTo = url => {
     history.pushState(null, null, url);

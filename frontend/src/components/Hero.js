@@ -1,4 +1,4 @@
-import Menu from "./Menu.js";
+import Menu from "./MainMenu.js";
 
 export default class {
     constructor() {

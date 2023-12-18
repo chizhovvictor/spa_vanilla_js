@@ -38,7 +38,7 @@ body {
   border: none;
   color: #041b29;
   font-weight: bold;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   transition: 0.3s;
 }
 
@@ -76,7 +76,7 @@ button {
 .button_text {
     font-size: 2rem;
     color: #041b29;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     font-weight: bold;
     transition: color 0.2s;  
 }
@@ -99,7 +99,7 @@ button {
   font-size: 2rem;
   color: #069E92;
   font-weight: bold;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
 }
 
 .nav_bar {
@@ -130,5 +130,5 @@ button {
   font-size: 2rem;
   color: #041b29;
   font-weight: bold;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
 }
