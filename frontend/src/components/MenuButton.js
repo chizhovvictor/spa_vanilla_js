@@ -1,9 +1,6 @@
-/* class type
-
 export default class MenuButton {
-    constructor(text, onClick) {
+    constructor(text) {
         this.text = text || "Button";
-        this.onClick = onClick || (() => {});
     }
 
     getHtml() {
@@ -14,25 +11,4 @@ export default class MenuButton {
         </button>
         `;
     }
-}
-
-*/
-
-// function type
-function createMenuButton(text, onClick) {
-    text = text || "Button";
-    onClick = onClick || (() => {});
-
-    function getHtml() {
-        return `
-        <button class="button_menu">
-            <span class="button_text">${text}</span>
-        </button>
-        `;
-    }
-
-    return {
-        getHtml,
-        onClick
-    };
 }
