@@ -1,6 +1,6 @@
 import Menu from "./MainMenu.js";
 
-export default class {
+export default class Hero {
     constructor() {
         document.title = 'Main';
         this.menu = new Menu();
@@ -29,8 +29,8 @@ export default class {
                         <div class="row logo justify-content-end me-5">
                             <img class="img_logo m-2" src="/src/static/text_logo.png" alt=""></img>
                         </div>
-                        <div class="me-5 mt-5">
-                            ${menuHtml}
+                        <div id="menu" class="me-5 mt-5">
+                            ${await this.menu.getHtml()}
                         </div>
                     </div>
                 </div>

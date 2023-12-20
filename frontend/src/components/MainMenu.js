@@ -3,9 +3,6 @@ import MenuButton from "./MenuButton.js";
 export default class MainMenu {
     constructor() {
         this.buttons = [
-            // new MenuButton("New Game", this.handleNewGameClick.bind(this)),
-            // new MenuButton("About Us", this.handleAboutUsClick.bind(this)),
-            // new MenuButton("Settings", this.handleSettingsClick.bind(this)),
             new MenuButton("New Game"),
             new MenuButton("About Us"),
             new MenuButton("Settings"),
@@ -30,19 +27,5 @@ export default class MainMenu {
         `).join('');
 
         return menuHtml;
-    }
-
-    // handleNewGameClick() {
-    //     console.log("Clicked New Game");
-    // }
-
-    // handleAboutUsClick() {
-    //     console.log("Clicked About Us");
-    // }
-
-    // handleSettingsClick() {
-    //     console.log("Clicked Settings");
-
-    // }
-    
+    }  
 }

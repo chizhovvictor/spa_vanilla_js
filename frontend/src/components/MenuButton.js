@@ -6,9 +6,9 @@ export default class MenuButton {
     getHtml() {
         
         return `
-        <button class="button_menu">
-            <span class="button_text">${this.text}</span>
-        </button>
+            <button class="button_menu">
+                <span class="button_text">${this.text}</span>
+            </button>
         `;
     }
 }

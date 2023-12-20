@@ -1,13 +1,25 @@
 import Hero from './components/Hero.js';
+import NewGameMenu from './components/NewGameMenu.js';
+import MainMenu from './components/MainMenu.js';
 
-function buttonClickHandler(buttonText) {
-    console.log(buttonText);
-    // console.log(`Clicked ${buttonText}`);
-    // Добавьте свой код обработки события для соответствующей кнопки
+async function buttonClickHandler(buttonText) {
 
-    if (buttonText === "New Game") {
-        console.log("LOL AZAZA");
-    }
+    setTimeout( async () => {
+
+        if (buttonText === "New Game") {
+            const newGame = new NewGameMenu();
+            document.getElementById('menu').innerHTML = await newGame.getHtml();
+        } else if (buttonText === "About Us") {
+                
+        } else if (buttonText === "Settings") {
+                
+        } else if (buttonText === "Back") {
+            const menu = new MainMenu();
+            document.getElementById('menu').innerHTML = await menu.getHtml();
+        }
+
+    }, 500);
+
 }
 
 /*
@@ -110,14 +122,14 @@ document.addEventListener('DOMContentLoaded', () => {
     router();
 });
 
-document.addEventListener('click', e => {
+document.addEventListener('click', async e => {
     if (e.target.className === 'link') {
         e.preventDefault();
         navigateTo(e.target.href);
     }
     if (e.target.classList.contains('button_text')) {
         e.preventDefault();
-        buttonClickHandler(e.target.innerHTML);
+        await buttonClickHandler(e.target.innerHTML);
     }
 });
 

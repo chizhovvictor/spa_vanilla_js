@@ -19,7 +19,7 @@ body {
 
 .hero {
     background-color: #fefae9;
-    background-image: url('/src/static/1217.mp4'); /* Путь к вашей картинке */
+    background-image: url('/src/static/1217.gif'); /* Путь к вашей картинке */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,6 +94,7 @@ button {
   color: #FE638B; /* Новый цвет текста при клике */
 }
 
+
 .logo {
   justify-content: center;
 }
@@ -134,4 +135,14 @@ button {
   color: #041b29;
   font-weight: bold;
   /* letter-spacing: -1px; */
+}
+
+.menu-transition {
+
+  
+}
+
+.menu-visible {
+  opacity: 1;
+  transform: translateX(0);
 }
