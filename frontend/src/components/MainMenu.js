@@ -7,6 +7,7 @@ export default class MainMenu {
             new MenuButton("About Us"),
             new MenuButton("Settings"),
         ];
+        document.title = 'Main';
     }
 
     async getHtml() {

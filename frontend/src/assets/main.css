@@ -91,9 +91,14 @@ button {
 
 .button_text:active {
   transition: color 0s;
-  color: #FE638B; /* Новый цвет текста при клике */
+  color: #FE638B;
+  text-shadow: 1px 1px 1px #041b29;
 }
 
+.button_text.active_button_text {
+  color: #FE638B;
+  text-shadow: 1px 1px 1px #041b29;
+}
 
 .logo {
   justify-content: center;

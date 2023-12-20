@@ -7,6 +7,7 @@ export default class NewGameMenu {
             new MenuButton("Multiplayer"),
             new MenuButton("Back"),
         ];
+        document.title = 'New Game';
     }
 
     async getHtml() {
